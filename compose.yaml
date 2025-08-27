@@ -1,0 +1,7 @@
+services:
+  loufairy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app:z

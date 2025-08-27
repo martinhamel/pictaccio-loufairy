@@ -1,0 +1,45 @@
+{
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "src/**/*"
+    ],
+    "compilerOptions": {
+        "composite": true,
+        "target": "es2021",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "importHelpers": true,
+        "alwaysStrict": true,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "strictNullChecks": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "outDir": "../../dist/loufairy",
+        "baseUrl": ".",
+        "paths": {
+            "@loufa/loufairy/*": ["src/*"]
+        },
+        "plugins": [
+            {
+                "transform": "typescript-transform-path-rewrite"
+            },
+            {
+                "transform": "typescript-transform-path-rewrite",
+                "afterDeclarations": true
+            }
+        ]
+    }
+}
+
