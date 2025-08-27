@@ -1,0 +1,32 @@
+{
+  "name": "@loufa/loufairy",
+  "version": "0.0.73",
+  "description": "loufa's internal library",
+  "main": "./src/entry.js",
+  "type": "commonjs",
+  "types": "dist/src/entry.d.ts",
+  "scripts": {
+    "build": "npx gulp compile && npx tsc --project tsconfig.cjs.json",
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register test/unit/**/*.test.ts",
+    "lint": "eslint src/ --ext .ts"
+  },
+  "author": "loufa",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.5",
+    "@types/sinon": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "google-closure-compiler": "^20230802.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^3.3.2",
+    "sinon": "^17.0.1",
+    "sinon-chai": "^3.7.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}

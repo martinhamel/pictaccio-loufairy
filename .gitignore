@@ -1,4 +1,3 @@
-dist/
 docs/*
 !docs/.gitkeep
 .idea/
@@ -196,7 +195,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/

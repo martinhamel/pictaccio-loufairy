@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.shallowCompare = exports.objectPropertiesIterator = exports.mergeObjects = exports.isObject = exports.isInteger = exports.isEmpty = exports.deepCompare = void 0;
+const tslib_1 = require("tslib");
+var deep_compare_1 = require("./deep_compare");
+Object.defineProperty(exports, "deepCompare", { enumerable: true, get: function () { return deep_compare_1.deepCompare; } });
+tslib_1.__exportStar(require("./inflection"), exports);
+var is_empty_1 = require("./is_empty");
+Object.defineProperty(exports, "isEmpty", { enumerable: true, get: function () { return is_empty_1.isEmpty; } });
+var is_integer_1 = require("./is_integer");
+Object.defineProperty(exports, "isInteger", { enumerable: true, get: function () { return is_integer_1.isInteger; } });
+var is_object_1 = require("./is_object");
+Object.defineProperty(exports, "isObject", { enumerable: true, get: function () { return is_object_1.isObject; } });
+var merge_objects_1 = require("./merge_objects");
+Object.defineProperty(exports, "mergeObjects", { enumerable: true, get: function () { return merge_objects_1.mergeObjects; } });
+var object_properties_iterator_1 = require("./object_properties_iterator");
+Object.defineProperty(exports, "objectPropertiesIterator", { enumerable: true, get: function () { return object_properties_iterator_1.objectPropertiesIterator; } });
+var shallow_compare_1 = require("./shallow_compare");
+Object.defineProperty(exports, "shallowCompare", { enumerable: true, get: function () { return shallow_compare_1.shallowCompare; } });
+tslib_1.__exportStar(require("./generate_iterative_name"), exports);
+tslib_1.__exportStar(require("./excel_encoding"), exports);
+//# sourceMappingURL=index.js.map
